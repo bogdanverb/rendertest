@@ -1,4 +1,4 @@
-FROM php:8.1-fpm AS stage-0
+FROM php:8.1-fpm AS stage-
 
 # Копіюємо composer
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
