@@ -1,0 +1,11 @@
+id: 66460
+name: my-laravel-project
+environments:
+    production:
+        memory: 1024
+        cli-memory: 512
+        runtime: 'php-8.3:al2'
+build:
+    commands:
+        - 'SET COMPOSER_MIRROR_PATH_REPOS=1 && composer install --no-dev'
+
